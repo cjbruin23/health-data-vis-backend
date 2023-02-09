@@ -1,9 +1,11 @@
-import * as cdk from '@aws-cdk/core';
+import { App, Stack, StackProps } from "aws-cdk-lib/core";
+import * as lambda_service from "./lambda_service";
 
-export class HealthDataVisBackendStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+export class HealthDataVisBackendStack extends Stack {
+  constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props);
 
     // The code that defines your stack goes here
+    new lambda_service.LambdaService(this, "Lambda");
   }
 }
