@@ -1,4 +1,4 @@
-import { Context, APIGatewayEvent } from "aws-lambda";
+import { APIGatewayEvent, Context } from "aws-lambda";
 
 const handler = (event: APIGatewayEvent, context: Context) => {
   try {

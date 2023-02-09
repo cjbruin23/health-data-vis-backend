@@ -1,4 +1,4 @@
-import { App, Stack, StackProps } from "aws-cdk-lib/core";
+import { App, Stack, StackProps } from "aws-cdk-lib";
 import * as lambda_service from "./lambda_service";
 
 export class HealthDataVisBackendStack extends Stack {
